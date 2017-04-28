@@ -1,0 +1,7 @@
+C:\Users\Ricar\Source\Repos\CrudPaises\Mapas\Bel\bin\Debug\Bel.dll
+C:\Users\Ricar\Source\Repos\CrudPaises\Mapas\Bel\bin\Debug\Bel.pdb
+C:\Users\Ricar\Source\Repos\CrudPaises\Mapas\Bel\bin\Debug\Dal.dll
+C:\Users\Ricar\Source\Repos\CrudPaises\Mapas\Bel\bin\Debug\Dal.pdb
+C:\Users\Ricar\Source\Repos\CrudPaises\Mapas\Bel\obj\Debug\Bel.csprojResolveAssemblyReference.cache
+C:\Users\Ricar\Source\Repos\CrudPaises\Mapas\Bel\obj\Debug\Bel.dll
+C:\Users\Ricar\Source\Repos\CrudPaises\Mapas\Bel\obj\Debug\Bel.pdb

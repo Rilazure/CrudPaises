@@ -1,0 +1,5 @@
+C:\Users\Ricar\Source\Repos\CrudPaises\Mapas\Dal\bin\Debug\Dal.dll
+C:\Users\Ricar\Source\Repos\CrudPaises\Mapas\Dal\bin\Debug\Dal.pdb
+C:\Users\Ricar\Source\Repos\CrudPaises\Mapas\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+C:\Users\Ricar\Source\Repos\CrudPaises\Mapas\Dal\obj\Debug\Dal.dll
+C:\Users\Ricar\Source\Repos\CrudPaises\Mapas\Dal\obj\Debug\Dal.pdb

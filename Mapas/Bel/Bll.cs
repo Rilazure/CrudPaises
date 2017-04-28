@@ -28,5 +28,13 @@ namespace Bel
         {
             Dl.Eliminar(IdUsuario);
         }
+        public DataTable CargarDrlB()
+        {
+            return Dl.CargarDrl();
+        }
+        public DataTable CargarDrlCiudades(int index)
+        {
+            return Dl.CargarDrlCiudades(index);
+        }
     }
 }
