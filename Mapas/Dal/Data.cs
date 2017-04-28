@@ -17,6 +17,8 @@ namespace Dal
         }
         public void ConsultarUsuarios()
         {
+            Conexion();
+
 
         }
     }
