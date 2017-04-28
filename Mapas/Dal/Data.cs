@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -15,11 +16,41 @@ namespace Dal
         {
             string cadena = ConfigurationManager.ConnectionStrings["dbz"].ConnectionString;
         }
-        public void ConsultarUsuarios()
+        public DataTable ConsultarUsuarios()
         {
             Conexion();
-
-
+            SqlCommand cmd = new SqlCommand("select * from Usuario",cx);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet dt = new DataSet();
+            cx.Open();
+            da.Fill(dt);
+            return dt.Tables[0];
+        }
+        public void insertarUsuario(string Nombre,int Fk_Ciudad)
+        {
+            Conexion();
+            SqlCommand cmd = new SqlCommand("insert into Usuario values (@Nombre,@Fk_Ciudad)", cx);
+            cx.Open();
+            cmd.Parameters.AddWithValue("@Nombre", Nombre);
+            cmd.Parameters.AddWithValue("@Fk_Ciudad", Fk_Ciudad);
+            cmd.ExecuteNonQuery();
+        }
+        public void Actualizar(int IdUsuario )
+        {
+            Conexion();
+            SqlCommand cmd = new SqlCommand("SpActualizar", cx);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cx.Open();
+            cmd.Parameters.AddWithValue("@IdUsuario", IdUsuario);
+            cmd.ExecuteNonQuery();
+        }
+        public void  Eliminar(int IdUsuario)
+        {
+            Conexion();
+            SqlCommand cmd = new SqlCommand("delete from Usuario where IdUsuario = @IdUsuario", cx);
+            cx.Open();            
+            cmd.Parameters.AddWithValue("@IdUsuario", IdUsuario);
+            cmd.ExecuteNonQuery();
         }
     }
 }
